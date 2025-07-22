@@ -1,0 +1,161 @@
+{
+  "feConfigs": {
+    "lafEnv": "https://laf.dev"
+  },
+  "systemEnv": {
+    "vectorMaxProcess": 15,
+    "qaMaxProcess": 15,
+    "tokenWorkers": 30,
+    "hnswEfSearch": 100
+  },
+  "llmModels": [
+    {
+      "provider": "OpenAI",
+      "model": "gpt-4o-mini",
+      "name": "gpt-4o-mini",
+      "maxContext": 128000,
+      "maxResponse": 16000,
+      "quoteMaxToken": 120000,
+      "maxTemperature": 1.2,
+      "charsPointsPrice": 0,
+      "censor": false,
+      "vision": true,
+      "datasetProcess": true,
+      "usedInClassify": true,
+      "usedInExtractFields": true,
+      "usedInToolCall": true,
+      "toolChoice": true,
+      "functionCall": false,
+      "defaultSystemChatPrompt": "",
+      "defaultConfig": {},
+      "fieldMap": {}
+    },
+    {
+      "provider": "OpenAI",
+      "model": "gpt-4o",
+      "name": "gpt-4o",
+      "maxContext": 128000,
+      "maxResponse": 4000,
+      "quoteMaxToken": 120000,
+      "maxTemperature": 1.2,
+      "charsPointsPrice": 0,
+      "censor": false,
+      "vision": true,
+      "datasetProcess": true,
+      "usedInClassify": true,
+      "usedInExtractFields": true,
+      "usedInToolCall": true,
+      "toolChoice": true,
+      "functionCall": false,
+      "defaultSystemChatPrompt": "",
+      "defaultConfig": {},
+      "fieldMap": {}
+    },
+    {
+      "provider": "OpenAI",
+      "model": "o1-mini",
+      "name": "o1-mini",
+      "maxContext": 128000,
+      "maxResponse": 65000,
+      "quoteMaxToken": 120000,
+      "maxTemperature": 1.2,
+      "charsPointsPrice": 0,
+      "censor": false,
+      "vision": false,
+      "datasetProcess": true,
+      "usedInClassify": true,
+      "usedInExtractFields": true,
+      "usedInToolCall": true,
+      "toolChoice": false,
+      "functionCall": false,
+      "defaultSystemChatPrompt": "",
+      "defaultConfig": {
+        "temperature": 1,
+        "max_tokens": null,
+        "stream": false
+      }
+    },
+    {
+      "provider": "OpenAI",
+      "model": "o1-preview",
+      "name": "o1-preview",
+      "maxContext": 128000,
+      "maxResponse": 32000,
+      "quoteMaxToken": 120000,
+      "maxTemperature": 1.2,
+      "charsPointsPrice": 0,
+      "censor": false,
+      "vision": false,
+      "datasetProcess": true,
+      "usedInClassify": true,
+      "usedInExtractFields": true,
+      "usedInToolCall": true,
+      "toolChoice": false,
+      "functionCall": false,
+      "defaultSystemChatPrompt": "",
+      "defaultConfig": {
+        "temperature": 1,
+        "max_tokens": null,
+        "stream": false
+      }
+    }
+  ],
+  "vectorModels": [
+    {
+      "provider": "OpenAI",
+      "model": "text-embedding-3-small",
+      "name": "text-embedding-3-small",
+      "charsPointsPrice": 0,
+      "defaultToken": 512,
+      "maxToken": 3000,
+      "weight": 100
+    },
+    {
+      "provider": "OpenAI",
+      "model": "text-embedding-3-large",
+      "name": "text-embedding-3-large",
+      "charsPointsPrice": 0,
+      "defaultToken": 512,
+      "maxToken": 3000,
+      "weight": 100,
+      "defaultConfig": {
+        "dimensions": 1024
+      }
+    },
+    {
+      "provider": "OpenAI",
+      "model": "text-embedding-ada-002",
+      "name": "Embedding-2",
+      "charsPointsPrice": 0,
+      "defaultToken": 700,
+      "maxToken": 3000,
+      "weight": 100,
+      "defaultConfig": {},
+      "dbConfig": {},
+      "queryConfig": {}
+    }
+  ],
+  "reRankModels": [],
+  "audioSpeechModels": [
+    {
+      "provider": "OpenAI",
+      "model": "tts-1",
+      "name": "OpenAI TTS1",
+      "charsPointsPrice": 0,
+      "voices": [
+        { "label": "Alloy", "value": "alloy", "bufferId": "openai-Alloy" },
+        { "label": "Echo", "value": "echo", "bufferId": "openai-Echo" },
+        { "label": "Fable", "value": "fable", "bufferId": "openai-Fable" },
+        { "label": "Onyx", "value": "onyx", "bufferId": "openai-Onyx" },
+        { "label": "Nova", "value": "nova", "bufferId": "openai-Nova" },
+        { "label": "Shimmer", "value": "shimmer", "bufferId": "openai-Shimmer" }
+      ]
+    }
+  ],
+  "whisperModel": {
+    "provider": "OpenAI",
+    "model": "whisper-1",
+    "name": "Whisper1",
+    "charsPointsPrice": 0
+  }
+}
